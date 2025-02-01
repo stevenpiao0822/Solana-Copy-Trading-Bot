@@ -38,10 +38,19 @@ Supported on Raydium, Jupiter and Pumpfun
   ]
 }
 ```
+### Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/solana-copy-trading-bot.git
+```
+2. Install dependencies:
+```bash
+cd solana-copy-trading-bot
+npm install
+```
+3. Configure the bot:
+- Create a .env file in the root directory of the project.
+- Add your Solana wallet private key and the address of the trader you want to copy.
+- Add the Solana cluster endpoint URL.
+- Add the Solana RPC endpoint URL.
 
-# 👤 Author
-### Telegram: [Vladmeer](https://t.me/vladmeer67)   
-https://t.me/vladmeer67
-
-### Twitter: [Vladmeer](https://x.com/vladmeer67)   
-https://x.com/vladmeer67
