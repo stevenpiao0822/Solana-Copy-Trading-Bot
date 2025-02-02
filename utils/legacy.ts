@@ -11,9 +11,9 @@ export const execute = async (transaction: VersionedTransaction, latestBlockhash
     wsEndpoint: RPC_WEBSOCKET_ENDPOINT,
   })
 
-  console.log(1)
   const signature = await solanaConnection.sendRawTransaction(transaction.serialize(), { skipPreflight: true })
-  console.log("🚀 ~ execute ~ signature:", `https://solscan.io/tx/${signature}`)
+  console.log("🚀 ~ execute ~ signature:", `https://solscan.io/tx/${signature}`);
+
   const confirmation = await solanaConnection.confirmTransaction(
     {
       signature,
@@ -32,5 +32,6 @@ export const execute = async (transaction: VersionedTransaction, latestBlockhash
     else
       console.log(`Success in Sell transaction: https://solscan.io/tx/${signature}`)
   }
+  
   return signature
 }
