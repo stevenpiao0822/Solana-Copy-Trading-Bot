@@ -53,4 +53,3 @@ npm install
 - Add your Solana wallet private key and the address of the trader you want to copy.
 - Add the Solana cluster endpoint URL.
 - Add the Solana RPC endpoint URL.
-
