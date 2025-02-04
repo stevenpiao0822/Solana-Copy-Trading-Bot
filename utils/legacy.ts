@@ -25,7 +25,7 @@ export const execute = async (transaction: VersionedTransaction, latestBlockhash
 
   if (confirmation.value.err) {
     console.log("Confrimtaion error")
-    return ""
+    return "";
   } else {
     if (isBuy)
       console.log(`Success in buy transaction: https://solscan.io/tx/${signature}`)
@@ -33,5 +33,5 @@ export const execute = async (transaction: VersionedTransaction, latestBlockhash
       console.log(`Success in Sell transaction: https://solscan.io/tx/${signature}`)
   }
   
-  return signature
+  return signature;
 }
